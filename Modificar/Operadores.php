@@ -2,7 +2,7 @@
  #proceso normal para modificasion 
  $columnas   = $libre_v4->Columnas($database,$tabla);     //obtiene las columnas de la tabla tanque
  $libre_v4->getKeyColumnUsege($database,$tabla);               //busca si existe una columna auto incremental
- $valores    = $libre_v4->ColunasInPost();                       //obtiene los valores enviado por post apartir de los nombre de las columnas 
+ $valores    = $libre_v4->ColunasInPost('');                       //obtiene los valores enviado por post apartir de los nombre de las columnas 
 
  $getColumnas    =$columnas;                //columnas de insert 
  $ModifiDatos    =$valores;                //valores para insetar en la tabla 
@@ -36,6 +36,6 @@
  }
  if(mysqli_affected_rows($conexion)>0){
      $libre_v4->Columnas($database,$tabla);
-     $libre_v4->ColunasInPostClear();
+     $libre_v4->ColunasInPostClear('');
  }
 ?>

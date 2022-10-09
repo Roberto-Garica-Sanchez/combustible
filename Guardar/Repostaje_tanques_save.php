@@ -3,7 +3,7 @@
     $columnas   = $libre_v4->Columnas($database,$tabla);            //obtiene las columnas de la tabla en la que guardara la informacion
     $libre_v4->ExtraColumns($database,$tabla);                      //busca si existe una columna auto incremental
     $Excepcion  = $libre_v4->getExtraColumns();                     //obtiene los resultados de la busqueda 
-    if(empty($valores))$valores    = $libre_v4->ColunasInPost();    //obtiene los valores enviado por post apartir de los nombre de las columnas 
+    if(empty($valores))$valores    = $libre_v4->ColunasInPost('');    //obtiene los valores enviado por post apartir de los nombre de las columnas 
     if(empty($ValoresByKey))$ValoresByKey='false';
     $ColumnasInsert     = $columnas;                //columnas de insert 
     $ValoresInsert      =  $valores;                //valores para insetar en la tabla 
@@ -37,7 +37,7 @@
 
     if(mysqli_affected_rows($conexion)>0){
         $libre_v4->Columnas($database,$tabla);
-        $libre_v4->ColunasInPostClear();
+        $libre_v4->ColunasInPostClear('');
     }
     
     

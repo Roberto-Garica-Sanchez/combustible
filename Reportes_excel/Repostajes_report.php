@@ -1,8 +1,8 @@
 <?php
     //PHPExcel_1_8\Classes\PHPExcel.php                      
-    //error_reporting(0);
+    //error_reporting('E_ALL');
     //ini_set( 'display_errors', false );
-    //error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE );
+    //
     //if(!include("C:/xampp/htdocs/PHPExcel_1_8/Classes/PHPExcel.php")){
     if(!include("C:/xampp/htdocs/PHPExcel/Classes/PHPExcel.php")){
         echo"Archivo no encontrado ";

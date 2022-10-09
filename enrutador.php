@@ -1,10 +1,10 @@
 <?php 
     #$elemento=$elementos_ajustes[x]
     include_once('../Librerias/General/Inicia_operadores.php');
-    if(!empty($_POST['Operadores']) and $_POST[' ']=='Limpiar')    {
+    if(!empty($_POST['Operadores']) and $_POST['Operadores']=='Limpiar')    {
         if(file_exists('limpiar_formulario/'.$elemento.'.php')){
             include_once('limpiar_formulario/'.$elemento.'.php');
-        }else{echo'Archivo no encontrado';}
+        }
         else if(file_exists('limpiar_formulario/limpia_genericos.php')){
             include_once('limpiar_formulario/limpia_genericos.php');
         }else{echo'Archivo no encontrado';}

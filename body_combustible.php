@@ -6,9 +6,9 @@
             //DB significa base de datos 
             //<div> permite crear contenedores 
         //--------- Oculta mensajes no deseados del desarollo del programa                         
-            //error_reporting(0);
+            //error_reporting('E_ALL');
             //ini_set( 'display_errors', false );
-            //error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE );
+            //
         //--
         date_default_timezone_set("Mexico/General");                        //ajusta la hora del servido en vasea una region 
         #include_once($_SERVER["DOCUMENT_ROOT"].'/CentroDeProcesos.php');                  
@@ -35,7 +35,7 @@
 
                 );
                 $class=array(
-                    'Conte_princiapal'=>'Lateral',
+                    'Conte_principal'=>'Lateral',
                     'Div_Opcion'=>'',
                     'Boton'=>'Boton_menu1',
                     'img'=>''

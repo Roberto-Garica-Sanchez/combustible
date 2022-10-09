@@ -6,13 +6,11 @@
         <title>Control De Combustible</title>
     </head>
     <body>
-        <form action="" method="post"> 
+        <form action="" method="post" id='formu1' onLoad='mueveReloj()'> 
             <?php 
-                include_once($_SERVER["DOCUMENT_ROOT"].'/combustible/body_combustible.php');
+                #include_once($_SERVER["DOCUMENT_ROOT"].'/combustible/body_combustible.php');
+                include_once($_SERVER["DOCUMENT_ROOT"].'/combustible/body.php');
             ?>
         </form>
     </body>
 </html>
-<?php
-
-?>
